@@ -1,41 +1,11 @@
-# Census Name Search BST
+Census Name Search BST
 
-A C++ command-line project that loads surname data from a CSV file into a binary search tree. The program can print names alphabetically, search for a surname, and display basic tree statistics.
+This is a C++ command-line project that stores census-style surname records in a binary search tree.
 
-## Overview
+The program reads surname records from a CSV file, inserts each record into a binary search tree using the surname as the key, prints the records in alphabetical order, searches for a surname, and displays basic tree statistics.
 
-This project demonstrates how a binary search tree can organize structured records using a string key. Each record contains a surname, census rank, and count. The tree uses the surname as the key, which allows an in-order traversal to print the records alphabetically.
+The purpose of this project is to practice binary search trees in C++. It focuses on structs, classes, pointers, recursion, file input, CSV parsing, in-order traversal, and command-line testing.
 
-## Features
+This project was based on a class assignment where the original goal was to load census surname data into a binary search tree and print the names alphabetically. I rebuilt it as a public portfolio project and added functionality beyond the assignment, including a terminal menu, surname search, comparison tracking, tree size, tree height, sample data, and cleaner documentation.
 
-- Loads census-style surname records from a CSV file
-- Stores records in a binary search tree
-- Prints records alphabetically using in-order traversal
-- Searches for a surname by name
-- Reports the number of comparisons used during search
-- Displays tree size and height
-- Builds from the command line using a Makefile
-
-## Technical Concepts
-
-- C++
-- Binary search trees
-- Recursion
-- Structs and classes
-- Pointers and dynamic memory
-- File input
-- CSV parsing
-- Command-line programs
-- Makefiles
-
-## File Structure
-
-```text
-main.cpp
-BinarySearchTree.h
-BinarySearchTree.cpp
-CensusRecord.h
-CensusData.h
-CensusData.cpp
-sample_names.csv
-Makefile
+I plan to keep improving this project by adding better input handling, output file export, case-insensitive search, and runtime comparisons against other sorting or searching approaches.
